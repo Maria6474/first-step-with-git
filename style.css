@@ -1,0 +1,49 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  font-family: "Arial", "Verdana", sans-serif;
+}
+h1,
+h2,
+h3 {
+  font-family: "Times New Roman", Times, serif;
+}
+.one {
+  padding: 40px 400px;
+  text-align: center;
+  background-color: cornflowerblue;
+}
+.title {
+  padding: 20px;
+}
+.two {
+  padding: 30px;
+}
+a:link {
+  background-color: darksalmon;
+}
+a:hover {
+  background-color: blueviolet;
+}
+a:active {
+  background-color: hotpink;
+}
+a + a {
+  margin-left: 80px;
+}
+article + article {
+  border-top: solid cornflowerblue;
+  border-width: 10px;
+}
+p.profession::after {
+  content: " 💻";
+}
+::selection {
+  background-color: black;
+  color: white;
+}
