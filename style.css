@@ -3,6 +3,9 @@
 *:after {
   box-sizing: border-box;
 }
+html {
+  font-family: "Arial", "Verdana", sans-serif;
+}
 
 body {
   margin: 0px;
@@ -13,19 +16,40 @@ h2,
 h3 {
   font-family: "Times New Roman", Times, serif;
 }
+article > h2,
+h3 {
+  position: relative;
+  left: -10px;
+}
+
 .one {
-  padding: 40px 400px;
+  padding: 40px 100px;
   text-align: center;
   background-color: cornflowerblue;
+  margin: 10px;
+  position: relative;
 }
 .title {
   padding: 20px;
 }
+.badge {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  margin: 0px;
+  background-color: burlywood;
+}
 .two {
   padding: 30px;
 }
+.experience-heading,
+.experience-subheading {
+  display: inline-block;
+  margin-right: 10px;
+}
 a:link {
-  background-color: darksalmon;
+  color: black;
+  background-color: burlywood;
 }
 a:hover {
   background-color: blueviolet;
@@ -46,4 +70,7 @@ p.profession::after {
 ::selection {
   background-color: black;
   color: white;
+}
+#profile {
+  background-color: white;
 }
